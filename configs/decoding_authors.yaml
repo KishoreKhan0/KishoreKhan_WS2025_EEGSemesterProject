@@ -1,0 +1,32 @@
+condition_order:
+- standing
+- walking_alone
+- walking_together
+tmin: -0.2
+tmax: 0.8
+baseline_start: -0.2
+baseline_end: 0.0
+reject_by_annotation: true
+detrend: null
+resample_sfreq: 100.0
+decim: 1
+min_epochs_per_condition: 40
+max_epochs_per_condition: 250
+cv_splits: 5
+test_size: 0.2
+random_seed: 42
+chance_level: 0.5
+stats_windows:
+  early:
+  - 0.0
+  - 0.2
+  p3_window:
+  - 0.25
+  - 0.5
+  late:
+  - 0.5
+  - 0.8
+pipeline_name: authors_decoding_extension
+preprocessing_manifest_path: authors_pipeline/outputs/tables/preprocessing_manifest.csv
+event_mapping_root: shared/outputs/event_mapping
+outputs_root: authors_pipeline/outputs/decoding_analysis

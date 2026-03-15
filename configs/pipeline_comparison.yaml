@@ -1,0 +1,10 @@
+outputs_root: shared/outputs/pipeline_comparison
+ours_preprocessing_root: ours_pipeline/outputs
+authors_preprocessing_root: authors_pipeline/outputs
+ours_oddball_root: ours_pipeline/outputs/oddball_replication
+authors_oddball_root: authors_pipeline/outputs/oddball_replication
+pipeline_order: [ours, authors]
+session_groups: [ses-01, ses-02, all_sessions]
+condition_order: [standing, walking_alone, walking_together]
+roi_channels: [Cz, Pz]
+topomap_times: [0.1, 0.2, 0.3, 0.4]

@@ -1,0 +1,4 @@
+pipeline_name: ours_replication
+input_dataset_root: data/ds004033
+outputs_root: ours_pipeline/outputs
+shared_event_mapping_root: shared/outputs/event_mapping

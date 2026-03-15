@@ -1,0 +1,4 @@
+ours_root: ours_pipeline/outputs/decoding_analysis
+authors_root: authors_pipeline/outputs/decoding_analysis
+outputs_root: shared/outputs/decoding_comparison
+chance_level: 0.5

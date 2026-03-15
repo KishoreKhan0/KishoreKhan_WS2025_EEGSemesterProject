@@ -1,0 +1,39 @@
+dataset_root: data/ds004033
+audit_output_root: shared/outputs/data_audit
+event_mapping_output_root: shared/outputs/event_mapping
+authors_repo_root: authors_pipeline/reference/original_repo/jos_sync2-main
+
+event_occurrences_filename: event_occurrences_long.csv
+event_definitions_filename: event_definitions_from_json.csv
+
+canonical_tasks:
+  oddball: oddball
+  sync: synchronization
+  eoec: eyes_open_closed
+  unknown: unknown
+
+authors_labels:
+  oddball_conditions:
+    - odd Standing1
+    - odd Standing2
+    - odd WalkingA1
+    - odd WalkingA2
+    - odd WalkingT1
+    - odd WalkingT2
+  sync_conditions:
+    - walk natural
+    - walk control
+    - walk sync
+  gait_events:
+    - ExpHS_WN
+    - ExpHS_WC
+    - ExpHS_WS
+    - ParHS_WN
+    - ParHS_WC
+    - ParHS_WS
+    - ExpTO_WN
+    - ExpTO_WC
+    - ExpTO_WS
+    - ParTO_WN
+    - ParTO_WC
+    - ParTO_WS

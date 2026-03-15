@@ -1,0 +1,13 @@
+authors_root: authors_pipeline/outputs/sync_tfr_analysis
+authors_label: authors
+ours_root: ours_pipeline/outputs/sync_tfr_analysis
+ours_label: ours
+outputs_root: shared/outputs/sync_comparison
+roi_order:
+  - alpha_mu
+  - beta
+condition_order:
+  - natural
+  - blocked
+  - sync
+report_title: Walking synchronization comparison (authors vs ours)

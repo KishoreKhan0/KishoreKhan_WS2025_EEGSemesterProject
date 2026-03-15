@@ -1,0 +1,20 @@
+pipeline_name: ours_oddball_replication
+preprocessing_manifest_path: ours_pipeline/outputs/tables/preprocessing_manifest.csv
+event_mapping_root: shared/outputs/event_mapping
+outputs_root: ours_pipeline/outputs/oddball_replication
+oddball_task_filters: []
+condition_order: [standing, walking_alone, walking_together]
+stimulus_order: [standard, deviant]
+tmin: -0.2
+tmax: 0.8
+baseline_start: -0.2
+baseline_end: 0.0
+reject_by_annotation: true
+detrend:
+decim: 1
+min_epochs_per_label: 5
+equalize_within_condition: false
+roi_channels: [Cz, Pz]
+peak_window_start: 0.25
+peak_window_end: 0.5
+topomap_times: [0.1, 0.2, 0.3, 0.4]

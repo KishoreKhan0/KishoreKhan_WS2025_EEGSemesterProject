@@ -1,0 +1,31 @@
+pipeline_name: authors_sync_tfr
+analysis_variant: authors
+preprocessing_manifest_path: authors_pipeline/outputs/tables/preprocessing_manifest.csv
+event_mapping_root: shared/outputs/event_mapping
+outputs_root: authors_pipeline/outputs/sync_tfr_analysis
+condition_order: [natural, blocked, sync]
+segment_pre_sec: 1.0
+baseline_start:
+baseline_end:
+baseline_mode: logratio
+all_cycle_fallback_baseline: true
+min_stride_sec: 0.6
+max_stride_sec: 2.0
+cycle_points: 200
+warp_mode: fixed_toe_percent
+fixed_toe_percent: 0.68
+freq_min_hz: 3.0
+freq_max_hz: 40.0
+n_freqs: 20
+freq_spacing: linear
+n_cycles_start: 4.0
+n_cycles_end: 10.0
+alpha_band: [7.5, 12.5]
+beta_band: [16.0, 32.0]
+alpha_channels: [C4, C6, CP4, CP6]
+beta_channels: [C1, Cz, C2]
+stats_method: wilcoxon
+fdr_alpha: 0.05
+bootstrap_iterations: 1000
+random_state: 97
+max_runs:

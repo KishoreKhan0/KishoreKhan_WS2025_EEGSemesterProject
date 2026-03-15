@@ -1,0 +1,26 @@
+pipeline_name: ours_replication
+profile_name: ours
+dataset_root: data/ds004033
+outputs_root: ours_pipeline/outputs
+run_inventory_path: shared/outputs/data_audit/tables/run_inventory.csv
+event_mapping_root: shared/outputs/event_mapping
+random_state: 97
+max_runs:
+raw_segment_start_sec: 60.0
+raw_segment_duration_sec: 15.0
+robust_std_z: 6.0
+apply_ransac_if_available: true
+interpolate_bads: true
+coordinate_scale_candidates: [1.0, 0.1, 0.01, 10.0, 100.0, 0.001]
+highpass_hz: 0.1
+lowpass_hz: 40.0
+notch_freqs_hz: [50.0, 100.0]
+resample_hz:
+average_reference: true
+ica_highpass_hz: 1.0
+ica_method_preference: picard
+ica_n_components: 0.99
+iclabel_threshold: 0.80
+use_asr: false
+extended_infomax: false
+n_jobs: 1

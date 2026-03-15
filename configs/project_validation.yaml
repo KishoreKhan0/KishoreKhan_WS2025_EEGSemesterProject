@@ -1,0 +1,12 @@
+project_root: .
+outputs_root: shared/outputs/project_validation
+ours_root: ours_pipeline/outputs
+authors_root: authors_pipeline/outputs
+expected_subjects: 18
+expected_sessions: 2
+expected_oddball_conditions: 3
+expected_oddball_stimulus_classes: 2
+expected_sync_conditions: 3
+expected_sync_bands: 2
+expected_decoding_pairs: 3
+expected_decoding_windows: 3

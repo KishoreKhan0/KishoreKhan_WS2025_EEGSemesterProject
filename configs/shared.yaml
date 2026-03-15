@@ -1,0 +1,32 @@
+dataset_root: data/ds004033
+audit_output_root: shared/outputs/data_audit
+event_mapping_output_root: shared/outputs/event_mapping
+authors_repo_root: authors_pipeline
+
+dataset_name: ds004033
+expected_sampling_rate_hz: 500
+
+raw_spotcheck_max_files: 4
+montage_preview_max_runs: 2
+random_seed: 42
+
+eeg_extensions:
+  - ".set"
+  - ".vhdr"
+  - ".edf"
+  - ".bdf"
+
+event_candidate_columns:
+  - trial_type
+  - value
+  - event_type
+  - HED
+  - stimulus
+  - condition
+
+coordinate_scale_checks:
+  - 1.0
+  - 0.1
+  - 0.01
+  - 10.0
+  - 100.0
