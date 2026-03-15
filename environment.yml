@@ -1,0 +1,16 @@
+name: eeg-project-final
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - numpy
+  - pandas
+  - scipy
+  - matplotlib
+  - mne
+  - pyyaml
+  - jupyter
+  - notebook
+  - scikit-learn
+  - statsmodels
+  - pip
