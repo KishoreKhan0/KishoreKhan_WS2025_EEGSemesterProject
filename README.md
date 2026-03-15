@@ -148,7 +148,7 @@ python shared/scripts/run_preprocessing.py --config configs/preprocessing_ours.y
 python shared/scripts/run_oddball_replication.py --config configs/oddball_replication_ours.yaml
 python shared/scripts/run_sync_tfr_analysis.py --config configs/sync_tfr_ours.yaml
 python shared/scripts/run_decoding_analysis.py --config configs/decoding_ours.yaml
-
+```
 # Notebooks
 
 The notebooks demonstrate the full workflow:
