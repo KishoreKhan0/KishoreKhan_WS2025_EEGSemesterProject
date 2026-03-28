@@ -1,7 +1,7 @@
-# EEG Walking Synchronization Project
+# EEG Analysis and Pipeline Comparison for Oddball and Walking Tasks
 
-Reproduction and extension of the EEG walking synchronization study using the **ds004033 dataset**.  
-This project implements both the **original authors' pipeline** and a **custom improved pipeline**, and compares their results across ERP, time–frequency, and decoding analyses.
+Reproduction and extension of EEG analyses on the ds004033 dataset, covering the auditory oddball task, walking synchronization task, and decoding analysis.  
+This project implements both an authors-inspired pipeline and an improved custom pipeline, and compares their results across ERP, time-frequency, and decoding analyses.
 
 ---
 
