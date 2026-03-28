@@ -1,3 +1,4 @@
+# Team Seals 
 # EEG Analysis and Pipeline Comparison for Oddball and Walking Tasks
 
 Reproduction and extension of EEG analyses on the ds004033 dataset, covering the auditory oddball task, walking synchronization task, and decoding analysis.  
@@ -184,7 +185,7 @@ To reproduce the project:
 
 All results can then be reproduced locally.
 
-# Author
+# Team Seals Authors
 - Kishore Khan
 - Eashan Sai
 - Georgina Shirazi
