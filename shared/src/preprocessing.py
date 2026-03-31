@@ -26,6 +26,7 @@ from mne.preprocessing import ICA
 from .audit_bids import parse_bids_entities, safe_read_tsv, save_dataframe, write_text
 
 
+
 DEFAULT_SCALE_CANDIDATES = (1.0, 0.1, 0.01, 10.0, 100.0, 0.001)
 PROFILE_DEFAULTS: dict[str, dict[str, Any]] = {
     'ours': {
