@@ -1,3 +1,5 @@
+# 18 subjects × 2 sessions = 36 expected runs; used to validate pipeline output completeness
+
 from __future__ import annotations
 
 from dataclasses import dataclass
