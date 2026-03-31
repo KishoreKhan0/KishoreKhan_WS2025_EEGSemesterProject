@@ -19,6 +19,7 @@ TASK_LABEL_PATTERNS = {
     'eyes_open_closed': [r'\beyes\b', r'\beo\b', r'\bec\b'],
 }
 
+#these come from the BIDS event structure of ds004033
 CONDITION_RULES = [
     ('standing', [r'odd\s*standing', r'^standing$']),
     ('walking_alone', [r'odd\s*walkinga', r'walkinga']),
