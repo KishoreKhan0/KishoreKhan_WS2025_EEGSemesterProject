@@ -30,15 +30,15 @@ from .audit_bids import parse_bids_entities, safe_read_tsv, save_dataframe, writ
 DEFAULT_SCALE_CANDIDATES = (1.0, 0.1, 0.01, 10.0, 100.0, 0.001)
 PROFILE_DEFAULTS: dict[str, dict[str, Any]] = {
     'ours': {
-        'highpass_hz': 0.1,
-        'lowpass_hz': 40.0,
-        'notch_freqs_hz': [50.0, 100.0],
-        'resample_hz': None,
+        'highpass_hz': 0.1, # preserves ERP morphology; 1Hz high-pass distorts slow components
+        'lowpass_hz': 40.0, # removes muscle artifact while retaining all ERP-relevant frequencies
+        'notch_freqs_hz': [50.0, 100.0], # removes European mains noise and harmonic
+        'resample_hz': None, # no resampling to avoid interpolation artifacts at preprocessing stage
         'average_reference': True,
         'ica_highpass_hz': 1.0,
-        'ica_method_preference': 'picard',
+        'ica_method_preference': 'picard', # faster and robust compared to extended infomax
         'ica_n_components': 0.99,
-        'iclabel_threshold': 0.80,
+        'iclabel_threshold': 0.80, # more aggressive with conserving brain signals at the cost of more artifact
         'use_asr': False,
         'extended_infomax': False,
     },
