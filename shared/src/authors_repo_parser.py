@@ -45,6 +45,7 @@ def parse_matlab_arrays(repo_root: str | Path) -> pd.DataFrame:
     return pd.DataFrame(rows, columns=['file', 'variable', 'index', 'value'])
 
 
+
 def extract_event_like_strings(repo_root: str | Path) -> pd.DataFrame:
     repo_root = Path(repo_root)
     rows: list[dict[str, object]] = []
